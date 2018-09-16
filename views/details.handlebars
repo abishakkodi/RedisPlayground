@@ -1,0 +1,20 @@
+
+<div class='details'>
+<h1>
+  {{user.first_name}}
+  {{user.last_name}}
+</h1>
+
+<ul class="list-group">
+  <li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
+  <li class="list-group-item"><strong>Phone: </strong>{{user.phone}}</li>
+</ul>
+
+<a class="btn btn-info pull-right" href="/">Back</a>
+</div>
+
+
+<form method="POST" action="/user/delete/{{user.id}}?_method=DELETE">
+  <input type="submit" class="btn btn-danger pull-right" value="delete">
+</form>
+

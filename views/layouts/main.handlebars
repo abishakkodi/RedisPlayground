@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Redusers Managment </title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  <style>
+  html, body {
+                height: 110%;
+
+            }
+
+@media screen and (min-width: 769px) {
+   body {
+    padding-top: 150px;
+}
+
+.search, .details {
+  padding-top: 40px;
+}
+
+.error {
+  display:inline-block;
+  color: black;
+  padding: 3px;
+}
+
+.push {
+  padding-top: 20px;
+}
+
+.mobile-list {
+  visibility: hidden;
+}
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    visibility: hidden;
+  }
+
+  .mobile-list {
+    visibility: visible;
+    display: flexbox;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="/">RedUsers MGMT</a>
+        <ul class="navbar-nav mr-auto center">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+             <a class="nav-link" href="/user/add">Add User</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-list flexbox">
+      <ul>
+        <h1>Redis Examples</h1>
+        <li><a href="/"><span> Home</span></a></li>
+        <li><a href="/user/add"><span> Add User</span></a></li>
+      </ul>
+    </div>
+
+    <div class="container push">
+  {{{body}}}
+    </div>
+</body>
+
+</html>
